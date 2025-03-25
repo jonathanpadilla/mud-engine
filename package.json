@@ -1,0 +1,40 @@
+{
+  "author": "Jonathan Padilla <[email](jonathanpadilla09@outlook.com)> (jonathanpadilla09@outlook.com)",
+  "description": "TypeScript game engine library for MUDs that handles core logic, including entity creation, room management, and game interactions in a modular and extensible way.",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
+    "eslint": "^9.23.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.5",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.5.0",
+    "prettier": "^3.5.3",
+    "tsup": "8.4.0",
+    "typescript": "5.8.2"
+  },
+  "keywords": [
+    "mud",
+    "mud-engine",
+    "game-engine",
+    "typescript",
+    "multiplayer",
+    "text-based-game",
+    "game-development",
+    "rpg",
+    "role-playing-game",
+    "game-logic"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "mud-engine",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "prepare": "husky install"
+  },
+  "type": "module",
+  "version": "0.0.1"
+}
