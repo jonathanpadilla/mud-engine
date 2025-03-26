@@ -25,6 +25,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "lts/*"
+          registry-url: 'https://registry.npmjs.org/'
 
       - name: Install dependencies
         run: npm ci
@@ -32,10 +33,10 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - run: npm audit signature
-
-      - name: release
+      - name: Bump version and publish (patch)
+        run: |
+          npm version patch -m "chore(release): bump version to %s"
+          npm publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx semantic-release
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
