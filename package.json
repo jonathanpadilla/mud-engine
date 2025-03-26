@@ -37,7 +37,7 @@
   ],
   "license": "ISC",
   "main": "index.js",
-  "name": "mud-engine",
+  "name": "@dev-dungeon/mud-engine",
   "publishConfig": {
     "access": "public"
   },
