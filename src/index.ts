@@ -1,1 +1,1 @@
-export const hello = () => 'Hello Mud-Engine!'
+export const hello = () => 'Hello Mud-Engine'
