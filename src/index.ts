@@ -1,1 +1,2 @@
-export const hello = () => 'Hello Mud-Engine'
+import 'module-alias/register'
+export * from './domain'
