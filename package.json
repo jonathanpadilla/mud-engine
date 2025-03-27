@@ -15,6 +15,7 @@
     "semantic-release": "^24.2.3",
     "ts-jest": "^29.3.0",
     "tsup": "8.4.0",
+    "tsx": "^4.19.3",
     "typescript": "5.8.2"
   },
   "exports": {
@@ -53,6 +54,7 @@
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
+    "example": "tsup && tsx example/src/index.ts",
     "lint": "eslint src --ext .ts",
     "lint:fix": "eslint src --ext .ts --fix",
     "prepare": "husky install",
@@ -62,5 +64,14 @@
   },
   "type": "module",
   "types": "dist/index.d.ts",
-  "version": "0.3.0"
+  "version": "0.4.0",
+  "dependencies": {
+    "module-alias": "^2.2.3"
+  },
+  "_moduleAliases": {
+    "@domain": "dist/domain",
+    "@application": "dist/application",
+    "@infrastructure": "dist/infrastructure",
+    "@shared": "dist/shared"
+  }
 }
