@@ -39,8 +39,9 @@
     "game-logic"
   ],
   "license": "ISC",
-  "main": "index.js",
-  "name": "@dev-dungeon/mud-engine",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "name": "mud-engine",
   "publishConfig": {
     "access": "public"
   },
