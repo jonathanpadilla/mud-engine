@@ -23,8 +23,7 @@
     "require": "./dist/index.js"
   },
   "files": [
-    "dist",
-    "README.md"
+    "dist"  
   ],
   "keywords": [
     "mud",
