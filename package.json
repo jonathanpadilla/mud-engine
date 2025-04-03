@@ -23,8 +23,7 @@
     "require": "./dist/index.js"
   },
   "files": [
-    "dist",
-    "README.md"
+    "dist"
   ],
   "keywords": [
     "mud",
@@ -65,7 +64,7 @@
   },
   "type": "module",
   "types": "dist/index.d.ts",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "dependencies": {
     "module-alias": "^2.2.3"
   },
