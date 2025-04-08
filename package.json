@@ -64,7 +64,7 @@
   },
   "type": "module",
   "types": "dist/index.d.ts",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "dependencies": {
     "module-alias": "^2.2.3"
   },
