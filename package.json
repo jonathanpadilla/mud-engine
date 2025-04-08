@@ -52,7 +52,7 @@
     "tar": "6.1.11"
   },
   "scripts": {
-    "build": "tsup",
+    "build": "tsup src/index.ts --format esm,cjs --dts",
     "dev": "tsup --watch",
     "example": "tsup && tsx example/src/index.ts",
     "lint": "eslint src --ext .ts",
