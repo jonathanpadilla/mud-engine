@@ -52,7 +52,7 @@
     "tar": "6.1.11"
   },
   "scripts": {
-    "build": "tsup",
+    "build": "tsup src/index.ts --format esm,cjs --dts",
     "dev": "tsup --watch",
     "example": "tsup && tsx example/src/index.ts",
     "lint": "eslint src --ext .ts",
@@ -64,7 +64,7 @@
   },
   "type": "module",
   "types": "dist/index.d.ts",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "dependencies": {
     "module-alias": "^2.2.3"
   },

@@ -22,6 +22,7 @@ export interface IPlaceAttr {
 
 export interface IPlaceExit {
   disabled?: boolean
+  distance?: number
   id: string
   lockable?: boolean
   locked?: boolean
