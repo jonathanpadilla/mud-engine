@@ -1,5 +1,8 @@
 import type { PlaceType, Orientation } from './Place.enums'
 
+export type IPlaceType = `${PlaceType}`
+export type OrientationType = `${Orientation}`
+
 export interface IPlace {
   attrs?: Array<IPlaceAttr>
   code: string
@@ -8,7 +11,7 @@ export interface IPlace {
   isExitToOtherArea?: boolean
   lightPost?: number
   npcs?: Array<IPlaceNpc>
-  placeType: PlaceType
+  placeType: IPlaceType
   players: Array<IPlacePlayer>
   security: number
   windows?: number
@@ -28,7 +31,7 @@ export interface IPlaceExit {
   locked?: boolean
   name: string
   opened: boolean
-  orientation: Orientation
+  orientation: OrientationType
   placeId: string
   unlocker?: Array<string>
   visible?: boolean
